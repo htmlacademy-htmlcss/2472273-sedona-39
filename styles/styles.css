@@ -1397,6 +1397,7 @@ input::-webkit-inner-spin-button {
 /* Tooltip */
 .tooltip {
   margin-left: 10px;
+  position: relative;
 }
 
 .tooltip-button {
@@ -1422,7 +1423,7 @@ input::-webkit-inner-spin-button {
   padding: 20px 18px 23px 22px;
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
