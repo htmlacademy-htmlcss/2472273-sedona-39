@@ -177,7 +177,8 @@ body{
 }
 
 .navigation-list:not(.navigation-user) {
-  width: 592px;
+  max-width: 592px;
+  flex-grow: 1;
 }
 
 .navigation-link {
@@ -964,6 +965,7 @@ outline: 3px solid #83B3D3;
   background-image: url('../images/icons/arrow-down.svg');
   background-repeat: no-repeat;
   background-position: center right 20px;
+  background-color: #ffffff;
 }
 
 .select-control:hover,
@@ -1089,9 +1091,10 @@ outline: 3px solid #83B3D3;
   text-transform: uppercase;
   background-color: #F2F2F2;
   margin: 0;
-  padding: 8px 22px;
+  padding: 8px 16px;
   border-radius: 4px;
   align-self: center;
+  text-align: center;
 }
 
 .active-button {
