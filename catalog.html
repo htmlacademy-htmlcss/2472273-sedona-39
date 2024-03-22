@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц в Седоне</title>
-
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
   <div class="page-container">
@@ -55,9 +56,9 @@
       </div>
     </header>
     <!-- Main -->
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <!-- Filter -->
-      <section class="filter" data-test="filter">
+      <section class="filter">
         <div class="container filter-container">
             <h1 class="filter-title title-h1">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
@@ -74,7 +75,7 @@
                   <a class="breadcrumbs-link" href="#"> Гостиницы</a>
                 </li>
               </ul>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
