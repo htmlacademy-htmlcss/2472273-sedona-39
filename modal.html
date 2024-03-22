@@ -218,7 +218,7 @@
           <!-- Modal -->
     <div class="modal-container">
       <div class="modal modal-search" data-test="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg class="close-icon" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" fill="black"/>
@@ -230,14 +230,14 @@
             <div class="field-group">
               <label class="date-check-in label-input" for="check-in">Дата Заезда:</label>
               <div class="field-group-content">
-                <input type="text" class="check-in-input" id="check-in" placeholder="Дата заезда" value="27 апреля 2020" required>
+                <input type="text" class="check-in-input" name="check-in" id="check-in" placeholder="Дата заезда" value="27 апреля 2020" required>
                 <span class="form-warning form-warning-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="field-group">
               <label class="date-departure label-input" for="departure">Дата Выезда:</label>
               <div class="field-group-content">
-                <input type="text" class="departure-input" id="departure" placeholder="Дата выезда" value="1 сентября 2023" required>
+                <input type="text" class="departure-input" id="departure" name="departure" placeholder="Дата выезда" value="1 сентября 2023" required>
                 <span class="form-warning">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
