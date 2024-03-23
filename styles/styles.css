@@ -21,10 +21,6 @@
   box-sizing: border-box;
 }
 
-svg {
-  fill: currentColor;
-}
-
 html {
   height: 100%;
 }
@@ -982,8 +978,8 @@ outline: 3px solid #83B3D3;
 
 .catalog-header {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   gap: 70px;
 }
 
