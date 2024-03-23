@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Ватрушкина](https://up.htmlacademy.ru/htmlcss/39/user/2472273).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Сайт: [мой проект Седона](https://lizapogotovko.github.io/2472273-sedona-39/)
 
 ---
 
