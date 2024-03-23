@@ -230,14 +230,14 @@
             <div class="field-group">
               <label class="date-check-in label-input" for="check-in">Дата Заезда:</label>
               <div class="field-group-content">
-                <input type="text" class="check-in-input" name="check-in" id="check-in" placeholder="Дата заезда" value="27 апреля 2020" required>
+                <input type="text" class="field-group-input check-in-input" name="check-in" id="check-in" placeholder="Дата заезда" value="27 апреля 2020" required>
                 <span class="form-warning form-warning-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="field-group">
               <label class="date-departure label-input" for="departure">Дата Выезда:</label>
               <div class="field-group-content">
-                <input type="text" class="departure-input" id="departure" name="departure" placeholder="Дата выезда" value="1 сентября 2023" required>
+                <input type="text" class="field-group-input departure-input" id="departure" name="departure" placeholder="Дата выезда" value="1 сентября 2023" required>
                 <span class="form-warning">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -246,10 +246,16 @@
                 <label class="adults label-input" for="adults">Взрослые:</label>
                 <div class="field-guest-content">
                   <button class="counter-button button-minus" type="button">
+                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                      </svg>
                     <span class="visually-hidden">Меньше</span>
                   </button>
-                  <input type="number" class="adults-input" id="adults" name="adults" value="2" required>
+                  <input type="number" class="field-group-input adults-input" id="adults" name="adults" value="2" required>
                   <button class="counter-button button-plus" type="button">
+                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                      </svg>
                     <span class="visually-hidden">Больше</span>
                   </button>
                 </div>
@@ -268,10 +274,16 @@
                 </label>
                 <div class="field-guest-content">
                   <button class="counter-button button-minus" type="button">
+                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                      </svg>
                     <span class="visually-hidden">Меньше</span>
                   </button>
-                  <input type="number" class="children-input" id="children" name="children" value="2">
+                  <input type="number" class="field-group-input children-input" id="children" name="children" value="2">
                   <button class="counter-button button-plus" type="button">
+                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                      </svg>
                     <span class="visually-hidden">Больше</span>
                   </button>
                 </div>

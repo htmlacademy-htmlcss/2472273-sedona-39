@@ -495,6 +495,7 @@ background-color: #ffffff;
 }
 
 .subscribe-input {
+  font-family: inherit;
   background-color: #F2F2F2;
   min-width: 452px;
   min-height: 52px;
@@ -505,6 +506,7 @@ background-color: #ffffff;
 }
 
 .subscribe-input::placeholder {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1264,22 +1266,15 @@ outline: 3px solid #83B3D3;
   border: none;
 }
 
-.departure-input:hover,
-.check-in-input:hover,
+.field-group-input:hover,
 .counter-button:hover,
-.children-input:hover,
-.adults-input:hover,
-.departure-input:focus,
-.check-in-input:focus,
-.counter-button:focus,
-.children-input:focus,
-.adults-input:focus{
+.field-group-input:focus,
+.counter-button:focus {
   background-color: rgba(230, 230, 230, 1);
   color: rgba(0, 0, 0, 0.6);
 }
 
-.departure-input:focus,
-.check-in-input:focus {
+.field-group-input:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
@@ -1344,9 +1339,15 @@ outline: 3px solid #83B3D3;
   border: none;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .counter-button {
@@ -1355,6 +1356,7 @@ input::-webkit-inner-spin-button {
   border: none;
   background-color: rgba(242, 242, 242, 1);
   cursor: pointer;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .icon-minus {
@@ -1374,24 +1376,28 @@ input::-webkit-inner-spin-button {
 }
 
 .button-minus {
-   background-image: url('../images/icons/minus.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .button-plus {
-  background-image: url('../images/icons/plus.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.counter-button:hover{
+  color: rgba(0, 0, 0, 1);
 }
 
 .counter-button:focus {
   outline: 3px solid rgba(130, 179, 211, 1);
   border-radius: 4px;
+  z-index: 2;
+  color: rgba(0, 0, 0, 1);
+}
+
+.counter-button:active {
+ color: rgba(0, 0, 0, 0.2);
 }
 
 /* Tooltip */
@@ -1423,7 +1429,7 @@ input::-webkit-inner-spin-button {
   padding: 20px 18px 23px 22px;
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -1437,10 +1443,9 @@ input::-webkit-inner-spin-button {
 .tooltip-text::after {
   content:'';
   background-image: url("../images/icons/tooltip-arrow.svg");
-  width: 14px;
-  height: 6px;
+  width: 19px;
+  height: 9px;
   position:absolute;
-  transform: translateX(-50%);
   bottom: 100%;
   left:0;
   right:0;
