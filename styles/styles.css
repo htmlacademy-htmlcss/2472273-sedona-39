@@ -98,7 +98,7 @@ body{
 }
 
 .button-secondary:hover,
- .button-secondary:focus {
+.button-secondary:focus {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -120,14 +120,14 @@ body{
 }
 
 /* Titles */
-.title-h1 {
+.title-main {
   margin: 0;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
 
-.title-h2 {
+.title-secondary {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
@@ -137,7 +137,7 @@ body{
   text-transform: uppercase;
 }
 
-.title-h3 {
+.title-tertiary {
   margin-top: 0;
   font-size: 24px;
   line-height: 28px;
@@ -947,14 +947,6 @@ align-items: center;
   opacity: 10%;
 }
 
-/* .search-resalt {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-  text-transform: uppercase;
-} */
-
 /* Cards*/
 /* Catalog header */
 .select-control {
@@ -1247,6 +1239,7 @@ align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   /* margin: 0 0 48px; */
+  margin-bottom: 23px;
 }
 
 .children {
@@ -1310,7 +1303,6 @@ align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 69px;
-  margin-bottom: 23px;
 }
 
 .guests {
