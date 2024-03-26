@@ -1,4 +1,4 @@
-/* Подключение шрифтов */
+/* Fonts */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -25,7 +25,7 @@ html {
   height: 100%;
 }
 
-body{
+body {
   margin: 0;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -107,7 +107,7 @@ body{
 }
 
 .active-button:hover,
-.active-button:focus{
+.active-button:focus {
   background-color: rgba(108, 158, 66, 1);
 }
 
@@ -271,8 +271,9 @@ body{
   padding-top: 51px;
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: rgba(230, 230, 230, 1);
+  background-position: center bottom;
 }
 
 .section-header-description {
@@ -416,21 +417,21 @@ background-color: rgba(255, 255, 255, 1);
   line-height: 21px;
 }
 
-.services-housing::before{
+.services-housing::before {
   content: url("../images/icons/house.svg");
   width: 75px;
   height: 72px;
   margin-bottom: 30px;
 }
 
-.services-food::before{
+.services-food::before {
   content: url("../images/icons/food.svg");
   width: 75px;
   height: 72px;
   margin-bottom: 30px;
 }
 
-.services-souvenirs::before{
+.services-souvenirs::before {
   content: url("../images/icons/souvenirs.svg");
   width: 64px;
   height: 76px;
@@ -472,7 +473,7 @@ background-color: rgba(255, 255, 255, 1);
   min-height: 415px;
   padding: 96px 258px 104px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(117, 97, 87, 1);
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -593,7 +594,7 @@ background-color: rgba(255, 255, 255, 1);
 }
 
 .footer-phone-link:hover,
-.footer-phone-link:focus{
+.footer-phone-link:focus {
   color: rgba(117, 97, 87, 1);
 }
 
@@ -999,7 +1000,7 @@ align-items: center;
   list-style: none;
 }
 
-.card-grid-toggle{
+.card-grid-toggle {
   display: flex;
   align-items: center;
   min-width: 48px;
@@ -1108,7 +1109,7 @@ align-items: center;
   list-style: none;
 }
 
-.pagination-link{
+.pagination-link {
   display: block;
   min-width: 60px;
   min-height: 60px;
@@ -1238,8 +1239,6 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* margin: 0 0 48px; */
-  margin-bottom: 23px;
 }
 
 .children {
@@ -1283,15 +1282,10 @@ align-items: center;
 }
 
 .form-warning {
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
-  width: 100%;
-  margin-top: 4px;
+  width: 440px;
   padding: 4px 20px 0;
   font-size: 16px;
   line-height: 21px;
-  /* transform: translateY(100%); */
 }
 
 .form-warning-error {
@@ -1299,7 +1293,6 @@ align-items: center;
 }
 
 .field-group-content {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   min-height: 69px;
@@ -1317,6 +1310,7 @@ align-items: center;
 }
 
 .label-input {
+  margin-bottom: 48px;
   padding: 12px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
@@ -1416,6 +1410,7 @@ input::-webkit-inner-spin-button {
   display: block;
   width: 26px;
   height: 26px;
+  margin-top: 11px;
   padding: 7px 12px;
   background-color: rgba(131, 179, 211, 1);
   border: none;
@@ -1425,8 +1420,8 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text {
   position: absolute;
-  top: 85%;
-  left: 50%;
+  top: 40%;
+  left: 45%;
   z-index: 1;
   transform: translateX(-50%);
   display: none;
