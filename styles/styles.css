@@ -269,10 +269,12 @@ body {
 .hero {
   min-height: 485px;
   padding-top: 51px;
-  background-image: url("../images/hero.jpg");
+  background-image:
+  url("../images/hero-icon.svg"),
+  url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(230, 230, 230, 1);
+  background-size: 100%, cover;
+  background-color: rgba(130, 179, 211, 1);
   background-position: center bottom;
 }
 
@@ -473,11 +475,11 @@ background-color: rgba(255, 255, 255, 1);
   min-height: 415px;
   padding: 96px 258px 104px;
   text-align: center;
-  color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 1);
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: rgba(230, 230, 230, 1);
+  background-color: rgba(117, 97, 87, 1);
 }
 
 .subscribe-container {
